@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #e0f7fa; /* Light Blue Background */
+  --foreground: #0277bd; /* Darker Blue for Text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #01579b; /* Dark Blue Background for Dark Mode */
+    --foreground: #81d4fa; /* Lighter Blue Text for Dark Mode */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
