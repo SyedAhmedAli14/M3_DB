@@ -7,8 +7,11 @@ export const generateStaticParams = async () => {
     blog_id: blog.id,
   }));
 };
-const BlogPostPage = ({ params }: { params: { blog_id: string } }) => {
-  return <BlogClient blog_id={params.blog_id} />;
+const BlogPostPage = async ({ params }: { params: Promise<{ blog_id: string }> }) => {
+  const resolvedParams = await params; // Await the Promise
+  const blog_id = resolvedParams.blog_id;
+
+  return <BlogClient blog_id={blog_id} />;
 };
 
 export default BlogPostPage;
