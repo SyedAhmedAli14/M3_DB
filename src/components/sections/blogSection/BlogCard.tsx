@@ -18,7 +18,7 @@ const BlogCard = ({ blog }: { blog: IAhmedBlogPost }) => {
         </div>
         <div className="py-2 space-y-3">
           <span className="px-4 py-2 bg-green-100 text-blue-600 rounded-md text-sm sm:text-lg font-semibold">
-            {"Food and Travel Esports"} {/* Display category dynamically */}
+            {"Food and Travel Esports"}
           </span>
           <h1 className="text-xl font-bold transition-colors duration-300 group-hover:text-blue-500">
             {blog.title}
