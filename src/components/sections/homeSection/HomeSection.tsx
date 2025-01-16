@@ -1,7 +1,6 @@
 import WheitageBlogging from "@/components/structureschema/WheitageBlogging";
 import React from "react";
 import homeImg from "@/assets/images/sectionImages/Home.jpg";
-import userImg from "@/assets/images/sectionImages/user.png";
 import Image from "next/image";
 import User from "@/components/structureschema/User";
 
@@ -23,7 +22,7 @@ const HomeSection = () => {
           <h1 className="text-black font-semibold text-xl sm:text-2xl md:text-4xl leading-tight">
             The Impact of HealthyFood in the Daily Life: How Diet is Essential
           </h1>
-          <User img={userImg} name="Syed Ahmed Ali Shah" date="January, 2025" />
+          <User  name="Syed Ahmed Ali Shah" date="January, 2025" />
         </div>
       </div>
     </WheitageBlogging>
