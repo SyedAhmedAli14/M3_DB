@@ -3,7 +3,7 @@ import { IAhmedBlogPost} from "@/Interfaces/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import userImg from "@/assets/images/sectionImages/user.png";
+
 
 const BlogCard = ({ blog }: { blog: IAhmedBlogPost }) => {
   return (
@@ -24,7 +24,7 @@ const BlogCard = ({ blog }: { blog: IAhmedBlogPost }) => {
             {blog.title}
           </h1>
         </div>
-        <User date={blog.date} img={userImg} name={"Syed Ahmed Ali Shah"} />
+        <User date={blog.date}  name={"Syed Ahmed Ali Shah"} />
       </Link>
     </div>
   );
